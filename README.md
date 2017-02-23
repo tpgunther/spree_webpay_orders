@@ -1,7 +1,7 @@
 SpreeWebpayOrders
 =================
 
-Introduction goes here.
+Remove bug that destroy incompletes orders with payments (hopefully is the only bug that destroy orders...)
 
 Installation
 ------------
@@ -36,4 +36,4 @@ Simply add this require statement to your spec_helper:
 require 'spree_webpay_orders/factories'
 ```
 
-Copyright (c) 2017 [name of extension creator], released under the New BSD License
+Copyright (c) 2017 Tomás Günther, released under the New BSD License

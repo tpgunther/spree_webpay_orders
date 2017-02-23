@@ -2,13 +2,13 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_webpay_orders'
-  s.version     = '2.3.8'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.version     = '2.3.0'
+  s.summary     = 'Remove bug (hopefully the only bug) which destroy incompletes orders '
+  s.description = 'Description'
   s.required_ruby_version = '>= 1.9.3'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
+  s.author    = 'Tomás Günther'
+  s.email     = 'tpgunther@acid.cl'
   # s.homepage  = 'http://www.spreecommerce.com'
 
   #s.files       = `git ls-files`.split("\n")
@@ -16,8 +16,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.3.8'
+  s.add_dependency 'spree_core', '~> 2.3.0'
 
+  s.add_development_dependency 'activesupport', '~> 4.1.8'
+  s.add_development_dependency 'rake', '11.1.2'
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'database_cleaner'
